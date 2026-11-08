@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hệ Thống Quản Trị & Danh Mục Website - Nguyễn Bá Thành</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #f59e0b;
+      --accent-blue: #38bdf8;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    .container { max-width: 1100px; margin: 0 auto; }
+    header {
+      padding: 2rem;
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    h1 { font-size: 1.8rem; color: var(--accent); }
+    .badge {
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--accent);
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      border: 1px solid rgba(245, 158, 11, 0.35);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.6rem;
+      transition: transform 0.2s, border-color 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card.featured {
+      border-color: var(--accent);
+      box-shadow: 0 10px 30px rgba(245, 158, 11, 0.12);
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: var(--accent);
+    }
+    .card h2 { font-size: 1.25rem; margin-bottom: 0.6rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: 700;
+      padding: 0.7rem 1.1rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Trung Tâm Quản Trị Website — Nguyễn Bá Thành</h1>
+        <p style="color: var(--muted); margin-top: 0.3rem;">
+          Bấm trực tiếp vào bất kỳ website nào bên dưới để mở ngay
+        </p>
+      </div>
+      <span class="badge">● Đang hoạt động</span>
+    </header>
+
+    <div class="grid" id="site-list">
+      <div class="card featured">
+        <div>
+          <h2>🏃‍♂️ Website & Blog Cá Nhân Nguyễn Bá Thành</h2>
+          <p>Câu chuyện “Mùng Một Tết, Tôi Đã Làm Một Việc Chưa Từng Làm Trong Đời”, hành trình 18 năm chạy bộ & đạp xe, chinh phục Marathon 42km Cam Ranh ở tuổi 58 cùng toàn bộ thư viện ảnh từ D:\Website.</p>
+        </div>
+        <a class="btn" href="../nguyen-ba-thanh-blog/index.html">Mở Website & Blog Cá Nhân →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <h2>🌐 Cổng Quản Trị Trung Tâm (Dashboard)</h2>
+          <p>Trang tổng hợp toàn bộ đường dẫn các website đã tạo và xuất bản trên GitHub Pages.</p>
+        </div>
+        <a class="btn" style="background: var(--accent-blue);" href="./index.html">Đang Mở Trang Này</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
