@@ -10,6 +10,7 @@
       --card: #1e293b;
       --accent: #f59e0b;
       --accent-blue: #38bdf8;
+      --accent-green: #10b981;
       --text: #f8fafc;
       --muted: #94a3b8;
       --border: #334155;
@@ -37,13 +38,13 @@
     }
     h1 { font-size: 1.8rem; color: var(--accent); }
     .badge {
-      background: rgba(245, 158, 11, 0.15);
-      color: var(--accent);
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--accent-green);
       padding: 0.4rem 0.9rem;
       border-radius: 999px;
       font-size: 0.85rem;
       font-weight: 600;
-      border: 1px solid rgba(245, 158, 11, 0.35);
+      border: 1px solid rgba(16, 185, 129, 0.35);
     }
     .grid {
       display: grid;
@@ -70,6 +71,7 @@
     }
     .card h2 { font-size: 1.25rem; margin-bottom: 0.6rem; }
     .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .btn-group { display: flex; flex-direction: column; gap: 0.6rem; }
     .btn {
       display: inline-block;
       text-decoration: none;
@@ -81,6 +83,11 @@
       text-align: center;
       transition: opacity 0.2s;
     }
+    .btn.secondary {
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent-blue);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+    }
     .btn:hover { opacity: 0.9; }
   </style>
 </head>
@@ -90,27 +97,44 @@
       <div>
         <h1>Trung Tâm Quản Trị Website — Nguyễn Bá Thành</h1>
         <p style="color: var(--muted); margin-top: 0.3rem;">
-          Bấm trực tiếp vào bất kỳ website nào bên dưới để mở ngay
+          Tài khoản GitHub đã kết nối: <strong>bathanh1969hbl-gif</strong>
         </p>
       </div>
-      <span class="badge">● Đang hoạt động</span>
+      <span class="badge">● Đã Kết Nối GitHub Pages</span>
     </header>
 
     <div class="grid" id="site-list">
       <div class="card featured">
         <div>
           <h2>🏃‍♂️ Website & Blog Cá Nhân Nguyễn Bá Thành</h2>
-          <p>Câu chuyện “Mùng Một Tết, Tôi Đã Làm Một Việc Chưa Từng Làm Trong Đời”, hành trình 18 năm chạy bộ & đạp xe, chinh phục Marathon 42km Cam Ranh ở tuổi 58 cùng toàn bộ thư viện ảnh từ D:\Website.</p>
+          <p>Câu chuyện “Mùng Một Tết, Tôi Đã Làm Một Việc Chưa Từng Làm Trong Đời”, hành trình 18 năm chạy bộ & đạp xe, chinh phục Marathon 42km Cam Ranh ở tuổi 58 cùng 169 bức ảnh hành trình.</p>
         </div>
-        <a class="btn" href="../nguyen-ba-thanh-blog/index.html">Mở Website & Blog Cá Nhân →</a>
+        <div class="btn-group">
+          <a class="btn" href="https://bathanh1969hbl-gif.github.io/nguyen-ba-thanh-blog/" target="_blank">🌐 Mở Trên Internet (GitHub Pages) →</a>
+          <a class="btn secondary" href="https://github.com/bathanh1969hbl-gif/nguyen-ba-thanh-blog" target="_blank">⚙️ Quản Trị Mã Nguồn GitHub →</a>
+        </div>
       </div>
 
       <div class="card">
         <div>
-          <h2>🌐 Cổng Quản Trị Trung Tâm (Dashboard)</h2>
+          <h2>🏠 Trang Chủ Chính Thức (Root Domain)</h2>
+          <p>Địa chỉ tên miền gốc GitHub Pages của tài khoản bathanh1969hbl-gif.</p>
+        </div>
+        <div class="btn-group">
+          <a class="btn" style="background: var(--accent-green);" href="https://bathanh1969hbl-gif.github.io/" target="_blank">🌐 Mở Trang Chủ Chính Thức →</a>
+          <a class="btn secondary" href="https://github.com/bathanh1969hbl-gif/bathanh1969hbl-gif.github.io" target="_blank">⚙️ Quản Trị Kho Lưu Trữ →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <h2>🎛️ Cổng Quản Trị Trung Tâm (Dashboard)</h2>
           <p>Trang tổng hợp toàn bộ đường dẫn các website đã tạo và xuất bản trên GitHub Pages.</p>
         </div>
-        <a class="btn" style="background: var(--accent-blue);" href="./index.html">Đang Mở Trang Này</a>
+        <div class="btn-group">
+          <a class="btn" style="background: var(--accent-blue);" href="https://bathanh1969hbl-gif.github.io/github-web-portal/" target="_blank">🌐 Mở Cổng Quản Trị Online →</a>
+          <a class="btn secondary" href="https://github.com/bathanh1969hbl-gif/github-web-portal" target="_blank">⚙️ Quản Trị Kho Lưu Trữ →</a>
+        </div>
       </div>
     </div>
   </div>
